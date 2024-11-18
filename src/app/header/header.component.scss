@@ -1,0 +1,53 @@
+.header {
+  background-color: #532702;
+  color: #fff;
+  padding: 10px 20px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+
+    li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+      font-family: Helvetica, sans-serif;
+
+      &:hover {
+        color: #c08457;
+      }
+    }
+  }
+
+  .btn-login {
+    background-color: #964b00;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: Helvetica, sans-serif;
+    color: #fff;
+
+    &:hover {
+      background-color: #c08457;
+    }
+  }
+}
