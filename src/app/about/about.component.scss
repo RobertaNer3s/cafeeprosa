@@ -1,0 +1,86 @@
+.about-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+
+  .about-hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #666;
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif
+    }
+  }
+
+  .about-content {
+    padding: 40px 20px;
+
+    .about-section {
+      margin-bottom: 30px;
+
+      h2 {
+        font-size: 2rem;
+        color: #444;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 5px;
+      }
+
+      p {
+        font-size: 1rem;
+        margin: 0;
+      }
+
+      &.about-values ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+
+        li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          .emoji {
+            font-size: 1.5rem;
+            margin-right: 10px;
+          }
+
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .about-footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+      margin: 0;
+      font-style: italic;
+    }
+  }
+}
