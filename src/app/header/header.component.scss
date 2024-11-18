@@ -1,5 +1,5 @@
 .header {
-  background-color: #532702;
+  background-color: #8B4513;
   color: #fff;
   padding: 10px 20px;
 
@@ -9,12 +9,21 @@
     align-items: center;
   }
 
+  .container-logo {
+    display: flex;
+    cursor: pointer;
+  }
+
   .logo {
     font-size: 24px;
     font-family: "Sacramento", cursive;
     font-weight: 400;
     font-style: normal;
-    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .logo-icon {
+    height: 50px;
   }
 
   .nav-links {
@@ -37,7 +46,7 @@
   }
 
   .btn-login {
-    background-color: #964b00;
+    background-color: #CD853F;
     border: none;
     padding: 8px 16px;
     cursor: pointer;
@@ -49,6 +58,24 @@
 
     &:hover {
       background-color: #c08457;
+    }
+  }
+
+  .cart-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    .cart-icon {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) saturate(100%) invert(43%) sepia(70%) saturate(2382%) hue-rotate(18deg) brightness(93%) contrast(86%);
+      transition: transform 0.3s;
+      margin-right: 10px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }

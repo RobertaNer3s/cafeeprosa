@@ -1,12 +1,66 @@
 <header class="header">
   <div class="container">
-    <h1 routerLink="/" class="logo">Café e Prosa</h1>
+    <div class="container-logo">
+      <img
+        routerLink="/"
+        src="assets/images/xicara-de-cafe.png"
+        alt="Xicara"
+        class="logo-icon"
+      />
+      <h1 routerLink="/" class="logo">Café e Prosa</h1>
+    </div>
     <nav>
       <ul class="nav-links">
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/menu">Menu</a></li>
-        <li><a routerLink="/about">Sobre</a></li>
-        <li><a routerLink="/contact">Contato</a></li>
+        <li>
+          <a routerLink="/" class="cart-link">
+            <img
+              src="assets/images/silhueta-de-icone-de-casa.png"
+              alt="Home"
+              class="cart-icon"
+            />
+            Home
+          </a>
+        </li>
+        <li>
+          <a routerLink="/menu" class="cart-link">
+            <img
+              src="assets/images/cardapio.png"
+              alt="Menu"
+              class="cart-icon"
+            />
+            Menu
+          </a>
+        </li>
+        <li>
+          <a routerLink="/about" class="cart-link">
+            <img
+              src="assets/images/botao-de-informacao.png"
+              alt="Sobre"
+              class="cart-icon"
+            />
+            Sobre
+          </a>
+        </li>
+        <li>
+          <a routerLink="/contact" class="cart-link">
+            <img
+              src="assets/images/contato.png"
+              alt="Contato"
+              class="cart-icon"
+            />
+            Contato
+          </a>
+        </li>
+        <li>
+          <a routerLink="/cart" class="cart-link">
+            <img
+              src="assets/images/carrinhos-de-compras.png"
+              alt="Carrinho"
+              class="cart-icon"
+            />
+            Carrinho
+          </a>
+        </li>
       </ul>
     </nav>
     <button class="btn-login" routerLink="/login">Login</button>
