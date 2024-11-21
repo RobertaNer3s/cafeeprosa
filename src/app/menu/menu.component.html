@@ -11,11 +11,34 @@
         <p>{{ coffee.description }}</p>
         <div class="price-button">
           <span class="price">R$ {{ coffee.price.toFixed(2) }}</span>
-          <button class="btn-add" (click)="addToCart(coffee)">Adicionar ao Carrinho</button>
+          <button class="btn-customize" (click)="openCustomization(coffee)">Personalizar</button>
         </div>
       </div>
     </div>
   </section>
+
+  <div *ngIf="selectedItem" class="customization-modal">
+    <div class="modal-content">
+      <h2>Personalizar {{ selectedItem.name }}</h2>
+
+      <label for="size">Escolha o tamanho:</label>
+      <select id="size" [(ngModel)]="customization.size">
+        <option *ngFor="let size of selectedItem.customization.sizes" [value]="size">
+          {{ size }}
+        </option>
+      </select>
+
+      <label for="milk">Escolha o tipo de leite:</label>
+      <select id="milk" [(ngModel)]="customization.milkType">
+        <option *ngFor="let milk of selectedItem.customization.milkTypes" [value]="milk">
+          {{ milk }}
+        </option>
+      </select>
+
+      <button class="btn-add" (click)="addToCartWithCustomization()">Adicionar ao Carrinho</button>
+      <button class="btn-cancel" (click)="selectedItem = null">Cancelar</button>
+    </div>
+  </div>
 
   <!-- Categoria: Sobremesas -->
   <section class="menu-category">
