@@ -1,4 +1,4 @@
-# Cafeeprosa
+# Cafe&prosa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
 
@@ -6,22 +6,33 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Descrição
+Cafe&prosa foi um trabalho elaborado para a faculdade de ciência da computação com intuito de colocar em prática determinados aprendizados adquiridos ao longo do tempo.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Pré-requisitos
+Node.js (>= 20.x)
+Angular CLI (>= 18.x)
 
-## Build
+## Passos
+Clone o Repositório:
+git clone https://github.com/seu-usuario/cafeeprosa.git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instale as Dependências:
+npm install
 
-## Running unit tests
+## Execute o Projeto:
+ng serve
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Acesse o Serviço:
+Abra seu navegador e vá para http://localhost:4200.
 
-## Running end-to-end tests
+## Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Passos para Contribuir
+Fork o repositório.
+Crie uma nova branch (git checkout -b feature/nova-feature).
+Faça commit das suas alterações (git commit -m 'Adiciona nova feature').
+Faça push para a branch (git push origin feature/nova-feature).
+Abra um Pull Request.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
